@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+.product{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1rem;
+    /* align-items: center; */
+    margin-top: 8%;
+    padding: 0 100px;
+  }
+  .product-img{
+    text-align: center;
+    cursor: pointer;
+    /* padding: 0 14%; */
+  }
+  .product-img img{
+    width: 30rem;
+  }
+  .product-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+  }
+  .price del{
+    text-decoration: line-through;
+  }
+  .price span{
+    font-size: 2rem;
+    color: #39ab70;
+  }
+  .brief{
+    margin-top: 2rem;
+  }
+  .brief h3{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .brief img{
+    width: 100%;
+  }
+  
+  .product-decs{
+    margin-top: 4rem;
+  }
+  .p-heading h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #222222;
+    font-size: 2.5rem;
+  }
+  .p-heading h1 span {
+    color: #13aff0;
+  }
+  .p-discription{
+    margin: 3rem 12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-discription p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.7rem;
+    font-weight: bold;
+  }
+  .p-discription p span{
+    color: #13aff0;
+    font-weight: bolder;
+  }
+  .album {
+    padding: 0 20%;
+   text-align: center;
+  }
+ .album img{
+  width: 70%;
+ }
+ .p-img img{
+  margin-top: 25px;
+ }
+ .mega{
+  margin-top: 25px;
+ }
+ .mega h1{
+  font-size: 2.4rem;
+  color: #555555;
+ }
+ .mega img{
+  margin: 20px 0;
+ }
+ 
+ @media (max-width: 760px){
+  .product{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 15%;
+ }
+ .product-img img{
+  width: 25rem;
+}
+.product-text h2{
+  font-size: 1.2rem;
+}
+.price span{
+  font-size: 1.5rem;
+  color: #39ab70;
+}
+.brief h3{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.p-heading h1{
+  font-size: 2rem;
+}
+.p-discription{
+  margin: 3rem 4rem;
+}
+.p-discription p{
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+}
+.album{
+  padding: 0 5%;
+}
+.mega h1{
+  font-size: 1.8rem;
+}
+ }
+ @media (max-width: 510px){
+  .product{
+    padding: 10px;
+    margin-top: 22%;
+  }
+  .product-img img{
+     width: 20rem;
+  }
+  .product-text{
+    padding: 5%;
+  }
+  .product-text h2{
+    font-size: 1rem;
+  }
+  .price span{
+    font-size: 1.2rem;
+  }
+  .brief h3{
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .p-heading h1{
+    font-size: 1.5rem;
+  }
+  .p-discription{
+    margin: 3rem 2rem;
+    justify-content: space-around;
+  }
+  .p-discription p{
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .album {
+    padding: 0;
+  }
+  .mega h1{
+    font-size: 1.4rem;
+  }
+  .mega img{
+    margin: 15px 0;
+   }
+ }
+

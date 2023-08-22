@@ -1,0 +1,41 @@
+<%- include('header'); -%>
+
+<style>
+  #checkout{
+    height: 300px;
+    text-align: center;
+  }
+  input{
+    border-radius: 10px;
+    height: 30px;
+  }
+
+  .btn{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: aqua;
+  }
+</style>
+
+<section  id="checkout">
+
+    <div class="page">
+
+        <h2>Checkout</h2>
+        <form id="checkout-form" action="/payment" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" name="contact" required>
+          <button type="submit" class="btn">Buy Now</button>
+        </form>
+      </div>
+
+</section>
+
+
+
+    <%- include('footer'); -%>

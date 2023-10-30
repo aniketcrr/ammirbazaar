@@ -7,15 +7,11 @@
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
 }
-/* body,html{
-  width: 100%;
+html , body{
+  width: 100vw;
   height: 100%;
   margin: 0;
   padding: 0;
-} */
-body{
-  min-height: 100vh;
-  min-width: 100vh;
   overflow-x: hidden;
 }
 /* ===========Header section============= */
@@ -36,7 +32,7 @@ body{
 /* ===========Header section end============= */
 /* ===========navigation section ============ */
 header {
-  position: absolute;
+  position: relative;
   top: 1;
   left: 0;
   width: 100%;
@@ -100,12 +96,10 @@ header .search {
   background: #eee;
   align-items: center;
   padding: 0 30px;
-  display: none;
   transition: 0.5s ease-in-out;
 }
 .searchbox.active {
   right: 0;
-  display: flex;
 }
 .searchbox input {
   width: 100%;
@@ -183,20 +177,19 @@ header .search {
   font-family: sans-serif;
   text-decoration: line-through;
 }
-.p-box button {
-  color: #555555;
-  background: transparent;
-  font-size: 12px;
-  font-weight: 300;
+.p-box .button {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 20px;
   padding: 7px 12px;
-  border: 1px solid #555555;
-  border-radius: 4px;
+  border: 1px solid black;
   cursor: pointer;
 }
-.p-box button:hover {
+.p-box .button:hover {
   background: #13aff0;
-  border: 1px solid #555555;
+  border: 1px solid black;
   color: #eee;
   transition: 0.5s;
 }
@@ -280,6 +273,7 @@ ul {
 }
 .footer-col img {
   width: 15rem;
+  cursor: pointer;
 }
 .copyright {
   text-align: center;
@@ -457,4 +451,5 @@ ul {
   }
 }
 /* ==================================================== */
+
 

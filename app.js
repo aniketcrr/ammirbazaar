@@ -27,9 +27,7 @@ app.get("/home", function (req, res) {
     res.redirect("/");
 });
 
-app.get("/cart", function (req, res) {
-    res.render("cart");
-});
+
 
 
 app.get("/about", function (req, res) {

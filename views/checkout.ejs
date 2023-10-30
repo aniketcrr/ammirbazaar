@@ -1,37 +1,68 @@
 <%- include('header'); -%>
 
+<link rel="stylesheet" href="checkout.css">
+
 <style>
   #checkout{
-    height: 300px;
-    text-align: center;
-  }
-  input{
-    border-radius: 10px;
-    height: 30px;
-  }
-
-  .btn{
-    height: 30px;
-    width: 300px;
-    border-radius: 5px;
-    background-color: aqua;
-  }
+  display: flex;
+  top: 0px;
+  justify-content: center;
+}
 </style>
 
 <section  id="checkout">
 
     <div class="page">
 
-        <h2>Checkout</h2>
-        <form id="checkout-form" action="/payment" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="contact">Contact No:</label>
-            <input type="text" id="contact" name="contact" required>
-          <button type="submit" class="btn">Buy Now</button>
-        </form>
+      <div class="container">
+        <div class="header">
+          <h1>Checkout</h1>
+        </div>
+        <div class="content">
+          <div class="billing-details">
+            <h2>Billing Details</h2>
+            <form id="checkout-form" action="/payment" method="post">
+            
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <label for="phone">Phone No</label>
+              <input type="tel" id="phone" name="phone" required>
+              
+          </div>
+          <div class="order-summary">
+            <h2>Your Order</h2>
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Product 1</td>
+                <td>$100.00</td>
+              </tr>
+              <tr>
+                <td>Product 2</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>Product 3</td>
+                <td>$75.00</td>
+              </tr>
+              <tr>
+                <td>Subtotal</td>
+                <td>$225.00</td>
+              </tr>
+            </table>
+          </div>
+          <button type="submit" class="btn">Place Order</button>
+    
+            </form>
+        </div>
+        
+      </div>
+
       </div>
 
 </section>

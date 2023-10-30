@@ -12,7 +12,6 @@ body,html{
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 1rem;
     /* align-items: center; */
-    margin-top: 8%;
     padding: 0 100px;
   }
   .product-img{
@@ -139,7 +138,7 @@ body,html{
  @media (max-width: 510px){
   .product{
     padding: 10px;
-    margin-top: 22%;
+    margin-top: 2%;
   }
   .product-img img{
      width: 20rem;

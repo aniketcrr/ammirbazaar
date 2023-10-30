@@ -8,8 +8,8 @@ const app = express();
 const _ = require("lodash");
 const { log } = require("console");
 
-const Razorpay = require('razorpay');
-const instance = new Razorpay({ key_id: process.env.KEY_ID, key_secret: process.env.KEY_SECRET })
+// const Razorpay = require('razorpay');
+// const instance = new Razorpay({ key_id: process.env.KEY_ID, key_secret: process.env.KEY_SECRET })
 
 
 app.set('view engine', 'ejs');
@@ -73,35 +73,35 @@ app.get("/checkout", function (req, res) {
 });
 
 
-app.post("/payment", async function (req, res) {
+// app.post("/payment", async function (req, res) {
 
-    console.log(req.body);
+//     console.log(req.body);
 
-    var option = {
-        amount: 5000,  // amount in the smallest currency unit
-        currency: "INR",
-        receipt: "order_rcptid_11"
-    };
+//     var option = {
+//         amount: 5000,  // amount in the smallest currency unit
+//         currency: "INR",
+//         receipt: "order_rcptid_11"
+//     };
 
-   const order = await instance.orders.create(option);
+//    const order = await instance.orders.create(option);
 
-   console.log(order);
+//    console.log(order);
 
-   const options = {
-    orderid : order.id ,
-    name : req.body.name ,
-    email : req.body.email,
-    contact : req.body.number,
-    key  : process.env.KEY_ID
+//    const options = {
+//     orderid : order.id ,
+//     name : req.body.name ,
+//     email : req.body.email,
+//     contact : req.body.number,
+//     key  : process.env.KEY_ID
 
-   }
+//    }
    
-console.log(options);
+// console.log(options);
 
-res.render("payment" , {orderId : options });
+// res.render("payment" , {orderId : options });
 
 
-});
+// });
 
 
 const port = process.env.PORT || 3000;

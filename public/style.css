@@ -330,9 +330,7 @@ ul {
     height: 20px;
   }
    */
-  .main-container img {
-    margin-top: 25px;
-  }
+ 
   .footer {
     padding: 10 40px;
   }
@@ -368,9 +366,7 @@ ul {
     height: calc(100vh - 40px);
     top: 40px;
   }
-  .main-container img {
-    margin-top: 50px;
-  }
+  
   .service-container {
     margin-top: 2rem;
   }

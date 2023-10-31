@@ -171,9 +171,10 @@ header .search {
 .p-box .a2 {
   font-weight: 600;
   line-height: 2rem;
-  color: #555555;
+  color: #39ab70;
 }
 .p-box .a2 del {
+  color: #555555;
   font-family: sans-serif;
   text-decoration: line-through;
 }

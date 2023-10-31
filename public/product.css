@@ -7,6 +7,14 @@ body,html{
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .product-decs {
+    margin-top: 30px; 
+  }
+}
+
+
+
 .product{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -113,7 +121,7 @@ body,html{
 }
 .brief h3{
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .p-heading h1{
   font-size: 2rem;
@@ -152,7 +160,7 @@ body,html{
   }
   .brief h3{
     font-size: 0.7rem;
-    font-weight: 400;
+    font-weight: 600;
   }
   .p-heading h1{
     font-size: 1.5rem;

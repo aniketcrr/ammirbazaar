@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+html , body{
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* ===========Header section============= */
+.offer {
+  padding: 8px 0;
+  background-color: #222222;
+}
+.offer h3 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  color: #eee;
+}
+.offer h3 span {
+  color: red;
+  font-size: 1rem;
+}
+/* ===========Header section end============= */
+/* ===========navigation section ============ */
+header {
+  position: relative;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #eee;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+.logo img {
+  width: 15rem;
+}
+.group {
+  display: flex;
+  align-items: center;
+}
+header ul {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}
+header ul li a {
+  position: relative;
+  font-size: 0.9rem;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #13aff0;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+header ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.searchbox {
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #eee;
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+}
+.searchbox.active {
+  right: 0;
+}
+.searchbox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  color: #222222;
+  font-size: 1rem;
+  background: #eee;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.searchBtn {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+.searchBtn.active {
+  left: 0;
+}
+.closeBtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  scale: 0;
+}
+
+.closeBtn.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  scale: 1;
+}
+.menuToggle {
+  position: relative;
+  display: none;
+}
+/* ===========navigation section end============ */
+/* ===========Main section============ */
+.main-container img {
+  width: 100%;
+}
+/* ===========Main section end============ */
+/* ===========product section ============ */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  grid-gap: 1.5rem;
+  margin-top: 4rem;
+}
+.p-box {
+  text-align: center;
+  padding: 20px 30px;
+}
+.p-box img {
+  cursor: pointer;
+  width: 16rem;
+}
+.p-box a {
+  color: #555555;
+  font-weight: 200;
+  font-size: small;
+}
+.p-box .a1 {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.p-box .a2 {
+  font-weight: 600;
+  line-height: 2rem;
+  color: #39ab70;
+}
+.p-box .a2 del {
+  color: #555555;
+  font-family: sans-serif;
+  text-decoration: line-through;
+}
+.p-box .button {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 7px 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.p-box .button:hover {
+  background: #13aff0;
+  border: 1px solid black;
+  color: #eee;
+  transition: 0.5s;
+}
+
+/* ===========product section end============ */
+/* ===========footer section ============ */
+.container {
+  max-width: 1270px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #222222;
+  padding: 70px 20px;
+  line-height: 2;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 18px;
+  color: #eee;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #13aff0;
+  height: 2px;
+  width: 25px;
+}
+.footer-col .fa-solid {
+  padding: 10px 12px;
+  color: #eee;
+  border: 1px solid #13aff0;
+  border-radius: 5px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 13px;
+  color: #eee;
+  text-decoration: none;
+  font-weight: 300;
+  color: #eee;
+  display: block;
+  transition: all 0.5s ease;
+}
+.footer-col ul li a:hover {
+  color: #13aff0;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #eee;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #13aff0;
+}
+.footer-col img {
+  width: 15rem;
+  cursor: pointer;
+}
+.copyright {
+  text-align: center;
+  color: #555555;
+}
+
+/* ===========footer section end============ */
+
+/* =================RESPONSIVE PAGES=================== */
+@media (max-width: 760px) {
+  .searchBtn {
+    left: 0;
+  }
+  .menuToggle {
+    position: absolute;
+    display: block;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform: translateX(30px);
+    z-index: 10;
+  }
+  header .navigation {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 100%;
+  }
+  header.open .navigation {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  header.open .navigation li a {
+    font-size: 1rem;
+  }
+  .hide {
+    display: none;
+  }
+  .logo img {
+    width: 12rem;
+  }
+  /* header{
+    height: 60px;
+  }
+  .searchbox input{
+    height: 20px;
+  }
+   */
+ 
+  .footer {
+    padding: 10 40px;
+  }
+  .footer-col {
+    width: 50%;
+  }
+  .footer-col h4 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .footer-col ul li a {
+    font-size: 10px;
+  }
+  .pay {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .offer h3 {
+    font-size: 12px;
+  }
+  .logo img {
+    width: 10rem;
+  }
+  header {
+    padding: 0 20px;
+    height: 50px;
+  }
+  .searchbox input {
+    height: 45px;
+  }
+  header.open .navigation {
+    height: calc(100vh - 40px);
+    top: 40px;
+  }
+  
+  .service-container {
+    margin-top: 2rem;
+  }
+  .p-box .a1 {
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .copyright h5 {
+    font-size: 6px;
+  }
+  .footer {
+    padding: 60px;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .footer-col h4 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .footer-col ul li a {
+    font-size: 10px;
+  }
+  .pay {
+    margin-top: 40px;
+  }
+}
+/* ===============================END======================= */
+/* ========================ALL PAGE============================ */
+.page{
+  text-align: center;
+  margin-top: 8%;
+}
+.page h1{
+  color: #555555;
+  font-size: 2.5rem;
+}
+.page span{
+  color: #13aff0;
+}
+.caption{
+ margin: 4rem;
+}
+.caption h3{
+  color:#555555 ;
+  font-size: 1.5rem ;
+}
+.caption p{
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: #555555;
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+@media (max-width: 760px) {
+  .page{
+    margin-top: 14%;
+  }
+}
+@media (max-width: 510px){
+  .page{
+    margin-top: 20%;
+  }
+  .page h1{
+    font-size: 1.5rem;
+  }
+  .caption h3{
+    font-size: 1.2rem 
+  }
+  .caption p{
+    font-size: 0.7rem ;
+    font-weight: 100;
+    line-height: 17px;
+    letter-spacing: 0;
+  }
+}
+/* ==================================================== */
+
+

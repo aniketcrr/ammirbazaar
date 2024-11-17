@@ -11,7 +11,6 @@ const { log } = require("console");
 // const Razorpay = require('razorpay');
 // const instance = new Razorpay({ key_id: process.env.KEY_ID, key_secret: process.env.KEY_SECRET })
 
-
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
